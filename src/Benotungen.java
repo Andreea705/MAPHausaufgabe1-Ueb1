@@ -10,7 +10,7 @@ public class Benotungen {
 
         for(int j = 0; j < noten.length; ++j) {
             if (noten[j] < 40) {
-                ++count;
+                count++;
             }
         }
 
