@@ -72,4 +72,21 @@ public class Benotungen {
 
         return abgerundet;
     }
+
+    public int maxabgerundetenote(int[] noten) {
+        if (noten.length == 0) {
+            throw new IllegalArgumentException("Notenarray muss nicht Null sein");
+        }
+
+        int[] abgerundet = abgerundetenoten(noten);
+        int maxNote = abgerundet[0];
+
+        for (int i = 1; i < abgerundet.length; i++) {
+            if (abgerundet[i] > maxNote) {
+                maxNote = abgerundet[i];
+            }
+        }
+
+        return maxNote;
+    }
 }

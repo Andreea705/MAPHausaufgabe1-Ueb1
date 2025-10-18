@@ -6,4 +6,5 @@ void main() {
  System.out.println(Arrays.toString(benotungen.durchgefallen(noten)));
  System.out.println(benotungen.mittelwertnote(noten));
  System.out.println(Arrays.toString(benotungen.abgerundetenoten(noten)));
+ System.out.println(benotungen.maxabgerundetenote(noten));
 }
