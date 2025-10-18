@@ -25,4 +25,18 @@ public class Benotungen {
 
         return durchfallnoten;
     }
+
+    public float mittelwertnote(int[] noten) {
+        float sum = 0.0F;
+
+        for(int i = 0; i < noten.length; ++i) {
+            if (noten[i] > 100 || noten[i] < 0) {
+                throw new IllegalArgumentException("Falsche Werte fuer die Noten");
+            }
+
+            sum += (float)noten[i];
+        }
+
+        return (float)Math.round(sum / (float)noten.length * 100.0F) / 100.0F;
+    }
 }
