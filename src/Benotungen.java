@@ -29,7 +29,7 @@ public class Benotungen {
     public float mittelwertnote(int[] noten) {
         float sum = 0;
 
-        for(int i = 0; i < noten.length; ++i) {
+        for(int i = 0; i < noten.length; i++) {
             if (noten[i] > 100 || noten[i] < 0) {
                 throw new IllegalArgumentException("Falsche Werte fuer die Noten");
             }
